@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="mainpage.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="topnav">
+        <input type="text" id="searchBar" placeholder="Search character">
+        <h1 class="CMTitle">Character Manager</h1>
+        <hr>
+    </div>
+
+
+    <div class="container">
+        <main class="grid" id="target">
+            <template id="tpl-char">
+            <article>
+                <img src="images/chopper.png" alt="" />
+                <div class="charText">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>
+                        Incididunt ea excepteur dolor ad mollit deserunt fugiat. Ex labore incididunt aute laborum.
+                    </p>
+                     <button> <a class="seeC" href="singlecharacter.html" >See character</a></button>
+                </div>
+            </article>
+            </template>
+
+
+        </main>
+    </div>
+
+    <a href="create.html" class="newCharButton">Add a new character to the collection</a>
+
+
+    <script src="mainpage.js"></script>
+</body>
+
+</html>

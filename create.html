@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create.css">
+    <title>Create and update</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Character manager</h1>
+            <div class="ligne"></div>
+        <div class="box">
+            <div class="insertion image">
+                <div class="rondimg">
+                    <!-- <p class="rondajoutimg">Preview</p> -->
+                    <input type="file" id="uploadFile" name="image" />
+                    <img id="image" src="" height="200"alt="Preview" >  
+                </div>
+                <!-- <button class="ajout img">Upload image</button> -->
+            </div class="ajout carateristique">
+            <form action="#" method="post">
+                <div class="field dob">
+                    <label for="heroName"></label>
+                    <input class="data" type="text" name="name" id="heroName" placeholder="Name:" />
+                </div>
+                <div class="field dob">
+                    <label for="heroShortDescription"></label>
+                    <input class="data" type="text" name="shortDescription" id="heroShortDescription" placeholder="short description:" />
+                </div>
+                <div class="field dob">
+                    <label for="herodescription"></label>
+                    <input class="data" type="text" name="description" id="heroDescription" placeholder="description:" />
+                </div>
+                <div class="deuxbuttons">
+                    <div class="actions">
+                        <button class="buttonun" type="button" id="Savechanges" >Save changes </button>
+                        <button class="buttondeux" type="button" id="Deletecharacter" onclick="window.location.reload();">Delete character</button>
+                        <!-- <a href="mainpage.html"class="buttonun" type="button" id="Savechanges">Save changes</a>
+                        <a href="mainpage.html"class="buttondeux" type="button" id="Deletecharacter">Delete character</a> -->
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="create.js"></script>
+</body>
+</html>
