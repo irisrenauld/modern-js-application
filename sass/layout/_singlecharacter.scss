@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background: linear-gradient(90deg, rgba(75,78,162,1) 0%, rgba(225,68,68,1) 100%);
+    font-family: 'Permanent Marker', cursive;
+}
+h1{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+.ligne{
+    background-color: white;
+    height: 2rem;
+}
+.containerSingleChara{
+    background-color: rgb(78, 78, 78);
+    border: 2px solid rgb(73, 73, 73);
+    border-radius: 8px;
+}
+.image{
+    border-radius: 100%;
+    width: 20%;
+    border: 3px solid rgb(219, 219, 219);
+}
+.name{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+.shortDescription{
+    color: rgb(165, 165, 165);
+    font-size: small;
+}
+.description{
+    color: rgb(165, 165, 165);
+}
