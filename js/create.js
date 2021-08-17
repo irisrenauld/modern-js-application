@@ -48,7 +48,7 @@
               body: JSON.stringify({ name, shortDescription, description:createdescription, image:base64, }),
           });
           alert("personnage ajouté")
-          window.location.href = "mainpage.html"
+          window.location.href = "index.html"
       }
         console.log(server);
         console.log(server.json());

@@ -17,19 +17,3 @@
         target.appendChild(character);
     });
 })();
-// document.getElementById("searchBar").addEventListener("keyup", function() {
-//     let bar = document.getElementById("searchBar")
-//     let searchstring = bar.value.toUpperCase()
-//     console.log(searchstring)
-//     let carte = document.querySelectorAll(".carte")
-//     for (let i=0; i< carte.length; i++) {
-//         let h3 = carte[1].querySelector("h3");
-//         let txt = h3.textContent || h3.innerText;
-//         if (txt.toUpperCase().indexOf(searchstring)> -1) {
-//             carte[i].style.display = ""
-//         }
-//         else {
-//             carte[1].getElementsByClassName.display = "none"
-//         }
-//     }
-// })

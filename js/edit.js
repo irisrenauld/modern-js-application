@@ -71,7 +71,7 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
                 },
             });
             alert("personnage supprimé")
-            window.location.href = "mainpage.html"
+            window.location.href = "index.html"
         }else{
             alert('supprimé de l api');
         }

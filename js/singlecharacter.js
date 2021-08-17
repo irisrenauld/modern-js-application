@@ -1,32 +1,4 @@
 
-    // (() => {
-    //     document.getElementById('updateCharacter').addEventListener('click', async ()=>{
-    //         const reponse = await fetch("https://character-database.becode.xyz/characters");
-    //         const heros = await reponse.json();
-     
-    //         const target = document.getElementById('target')
-    //         const template = document.querySelector("#tpl-hero")
-            
-    //         heros.forEach(hero => {
-                
-    //             let clone = template.content.cloneNode(true);
-               
-    //             const name = clone.querySelector(".name")
-    //             const alterEgo = clone.querySelector(".alter-ego")
-    //             const pouvoir = clone.querySelector(".powers")
-               
-    //             name.innerHTML = hero.name
-    //             alterEgo.innerHTML = hero.alterEgo
-    //             pouvoir.innerHTML = hero.abilities
-    //             target.appendChild(clone);//appendChild ajoute au target les enfants de clone
-    //         });
-            
-    //         console.log(heros)
-            
-    //     });
-    // })();
-
-
 
     (async () => {
 
@@ -64,7 +36,7 @@
                         },
                     });
                     alert("personnage supprimé")
-                    window.location.href = "mainpage.html"
+                    window.location.href = "index.html"
                 }else{
                     alert('supprimé de l api');
                 }
@@ -72,28 +44,3 @@
 
         });
     })();
-
-
-
-
-
-
-
-
-
-     // await fetch(`https://character-database.becode.xyz/characters/${queryString}`, {
-                        //     method: `PUT`,
-                        //     headers: {
-                        //         "Content-Type": "application/json",
-                        //     body: JSON.stringify({
-                        //         description:`${text}`,
-                        //         shortDescription:`${preface}`,
-                        //         id:`${id}`,
-                        //         name:`${name}`,
-                        //         image:`${base64}`
-                        //     })
-                        //     },
-                        // });
-
-
-            
