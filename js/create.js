@@ -22,7 +22,7 @@
 
     document.getElementById("Savechanges").addEventListener("click", async() => {
         const inputs = Array.from(document.querySelectorAll(".data"));
-
+        const createdescription = document.getElementById("heroDescription").children[0].innerHTML
         let values = inputs.map(({ value }) => {
             return value.trim();
         });
@@ -33,11 +33,11 @@
         }
         
          
-        let [name, shortDescription, description] = values;
+        let [name, shortDescription ] = values;
         // let id ;
 
         console.log(
-            `${name} ${shortDescription} ${description} ${image}`
+            `${name} ${shortDescription} ${createdescription} ${image}`
         );
         if(confirm ('voulez vous ajouter ?')){
           let server = await fetch("https://character-database.becode.xyz/characters",{
@@ -45,7 +45,7 @@
               headers:{
               "Content-Type": "application/json",
           },
-              body: JSON.stringify({ name, shortDescription, description, image:base64, }),
+              body: JSON.stringify({ name, shortDescription, description:createdescription, image:base64, }),
           });
           alert("personnage ajouté")
           window.location.href = "mainpage.html"

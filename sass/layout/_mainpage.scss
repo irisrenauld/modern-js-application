@@ -2,24 +2,37 @@ body {
     background-image: linear-gradient(to right, #4B4EA2, #E14444);
     color: white;
     font-family: 'Roboto', sans-serif;
+    margin: 0px 70px 80px 70px ;
 }
 
 .CMTitle {
     font-family: 'Permanent Marker', cursive;
 }
-
+.topnav{
+    box-sizing: border-box;
+    margin: 1rem;
+    .topnav-container{
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .topnav input[type=text] {
     float: right;
     padding: 6px;
     border: none;
-    margin-top: 8px;
-    margin-right: 16px;
+    margin-top: 20px;
     font-size: 17px;
     border-radius: 10px;
+    font-style: italic;
 }
-
+.ligne{
+    background-color: white;
+    height: 1px;
+    margin: 3px 1px 41px 0px;    
+}
 .grid {
-    margin: 80 px;
+    /* margin: 80px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -29,30 +42,54 @@ body {
 .grid>article {
     background: #363333;
     border: none;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     width: 250px;
+    height: 350px;
     transition: transform .3s;
     text-align: center;
+    /* grid-auto-rows: minmax(375px,auto); */
+}
+
+.charName {
+    font-family: 'Permanent Marker', cursive;
+    overflow-wrap: break-word;
+    margin-top: 0px;
+    height:40px;
+    padding-bottom: 21px;
 }
 
 .charText {
     text-align: left;
+    height: 70px;
 }
 
 .grid>article:hover {
     transform: translate(5px);
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
 }
 
 .grid>article img {
     width: 35%;
     border-radius: 100px;
+    padding: 20px;
+    height :100px;
 }
 
 .charText {
+    height :70px;
     padding: 0 20px 20px;
 }
+
+.MPshortDescription {
+    height: 70px;
+    overflow: hidden;
+    font-size: 0.9em;
+    color: grey;
+    overflow-wrap: break-word;
+    
+}
+
 .seeC{
     text-align: left;
     background: none;
@@ -63,8 +100,13 @@ body {
     width: 8em;
     cursor: pointer;
     text-decoration: none;
+    font-style: italic;
+    font-size: 0.8em;
 }
-
+.seeC:hover {
+    background-color:#4B4EA2;
+    color: white;
+}
 .newCharButton {
     display: block;
     border-radius: 10px;
@@ -79,4 +121,9 @@ body {
     padding: 0.3em;
     width: 20em;
     text-decoration: none;
+    transition: transform .3s;
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
+}
+.newCharButton:hover{
+    transform:translateY(5px);
 }

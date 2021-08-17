@@ -10,15 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="/csss/create.css">
     <title>Single Character</title>
 </head>
 <body>
-    <h1>Character manager</h1>
+    <h1 class="titleh1">Character manager</h1>
     <div class="ligne"></div>
-    <div class="containerSingleChara">
+    <div class="container">
+        <div class="box" id="boxsingle">
         <div class="image">
+            <div class="rondimgsingle">
             <img id="image" src="" height="200" alt="Preview">
+        </div>
         </div>
         <div class="text">
             <h1 class="name" id="name"></h1>
@@ -30,7 +33,7 @@
                 <button class="buttonun" type="button" id="updateCharacter"> update Character </button>
                 <button class="buttondeux" type="button" id="Deletecharacter">Delete character</button>
     </div>
-
-    <script src="singlecharacter.js"></script>
+</div>
+    <script src="/js/singlecharacter.js"></script>
 </body>
 </html>

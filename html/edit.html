@@ -7,34 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/csss/create.css">
     <title>Create and update</title>
 </head>
 <body>
     <div class="container">
-            <h1>Character manager</h1>
+            <h1 class="titleh1">Character manager</h1>
             <div class="ligne"></div>
         <div class="box">
             <div class="insertion image">
                 <div class="rondimg">
                     <!-- <p class="rondajoutimg">Preview</p> -->
-                    <input type="file" id="uploadFile" name="image" value=""/>
                     <img id="image" src="" height="200"alt="Preview" >  
                 </div>
+                <input type="file" id="uploadFile" name="image" value=""/>
                 <!-- <button class="ajout img">Upload image</button> -->
-            </div class="ajout carateristique">
+            </div class="ajoutcarateristique">
             <form action="#" method="post">
-                <div class="field dob">
+                <div class="fielddobname">
                     <label for="heroName"></label>
-                    <input class="data" type="text" name="name" id="heroName" value=""/>
+                    <input class="data" type="text" maxlength="20" name="name" id="heroName" value=""/>
                 </div>
-                <div class="field dob">
+                <div class="fielddobshort">
                     <label for="heroShortDescription"></label>
-                    <input class="data" type="text" name="shortDescription" id="heroShortDescription" value=""/>
+                    <input class="data" type="text" maxlength="70" name="shortDescription" id="heroShortDescription" value=""/>
                 </div>
-                <div class="field dob">
+                <div class="fielddobdescrip">
                     <label for="herodescription"></label>
-                    <input class="data" type="text" name="description" id="heroDescription" value=""/>
+                    <div class="divblanche">
+                    <div  type="text" name="description" id="heroDescription" value=""></div>
+                </div>
                 </div>
                 <div class="deuxbuttons">
                     <div class="actions">
@@ -48,6 +51,12 @@
             </div>
         </div>
     </div>
-    <script src="edit.js"></script>
+    <script src="/js/edit.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+        var quill = new Quill('#heroDescription', {
+          theme: 'snow'
+        });
+      </script>
 </body>
 </html>

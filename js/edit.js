@@ -29,11 +29,10 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
     document.getElementById("image").src = `data:image/png;base64,${charCard.image}`;
     document.getElementById("heroName").value = charCard.name;
     document.getElementById("heroShortDescription").value = charCard.shortDescription;
-    document.getElementById("heroDescription").value = charCard.description;
-
+    document.getElementById("heroDescription").children[0].innerHTML = charCard.description;
     document.getElementById("Savechanges").addEventListener("click", async () => {
         let inputs = Array.from(document.querySelectorAll(".data"));
-
+        const createdescription = document.getElementById("heroDescription").children[0].innerHTML 
         let values = inputs.map(({ value })=>{
             return value.trim();
         });
@@ -44,7 +43,7 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
         }
         
 
-        let [name, shortDescription, description, image] = values;
+        let [name, shortDescription, image] = values;
         
         if(confirm ('voulez vous ajouter la modification ?')){
             const postData = await fetch(`https://character-database.becode.xyz/characters/${idSplit}`, {
@@ -55,7 +54,7 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
                 body: JSON.stringify({
                     name: name,
                     shortDescription:shortDescription,
-                    description:description,
+                    description:createdescription,
                     image: base64,
                 })
             })
