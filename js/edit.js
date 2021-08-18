@@ -59,7 +59,7 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
                 })
             })
             alert("modification ajouté")
-            window.location.href = "mainpage.html"
+            window.location.href = "./html/index.html"
         }
     });
     document.getElementById("Deletecharacter").addEventListener("click", async () => {
@@ -71,7 +71,7 @@ document.getElementById("uploadFile").addEventListener("change", previewFile);
                 },
             });
             alert("personnage supprimé")
-            window.location.href = "index.html"
+            window.location.href = "./html/index.html"
         }else{
             alert('supprimé de l api');
         }

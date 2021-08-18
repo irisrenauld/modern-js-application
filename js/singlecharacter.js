@@ -12,7 +12,7 @@
             character.forEach(obj => {
                 if (queryString === obj.id){
                     document.getElementById("updateCharacter").addEventListener('click', async ()=>{
-                        window.location.href =`edit.html?${obj.id}`
+                        window.location.href =`./html/edit.html?${obj.id}`
                     });
                 
                 let img = document.querySelector("img");
@@ -36,7 +36,7 @@
                         },
                     });
                     alert("personnage supprimé")
-                    window.location.href = "index.html"
+                    window.location.href = "./html/index.html"
                 }else{
                     alert('supprimé de l api');
                 }
