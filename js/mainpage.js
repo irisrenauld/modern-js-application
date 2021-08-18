@@ -12,7 +12,7 @@
         character.querySelector("img").src = `data:image/png;base64, ${image}`;
         character.querySelector("h2").innerHTML = name;
         character.querySelector("p").innerHTML = shortDescription;
-        character.querySelector("a").href = `./html/singlecharacter.html?${id}`;
+        character.querySelector("a").href = `/html/singlecharacter.html?${id}`;
 
         target.appendChild(character);
     });
